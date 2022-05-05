@@ -1,0 +1,37 @@
+#btn{
+    display: block;
+    width: 40%;
+    margin: 0 1rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    
+}
+.c-t{
+    display: block;
+    font-size: 2rem;
+    margin: 0.7rem 0 !important;
+    font-weight: bold;
+}
+.ccc .card-text{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.im{
+    height: 20rem;
+    object-fit: cover;
+}
+.ccc{
+    min-height: 40rem !important;
+    margin: 3rem auto !important;
+
+}
+.ccc .card{
+    min-height: 40rem !important;
+}
+.p-r{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}

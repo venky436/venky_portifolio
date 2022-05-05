@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Kelly+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 65%;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+body{
+    width: 100% !important;
+    height: auto;
+}
+
+@media screen and (max-width : 1300px) {
+    html{
+        font-size: 50%;
+    }
+    .main #t{
+        display: none;
+    }
+    .main #b{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width : 900px) {
+    html{
+        font-size: 40%;
+    }
+    .home-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+    
+    
+}

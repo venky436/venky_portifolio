@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/About.css'
 import '../styles/Home.css'
 import ReactTypingEffect from "react-typing-effect";
+import my from '../my.jpg'
 
 export default function AboutScreen() {
   return (
@@ -34,11 +35,11 @@ export default function AboutScreen() {
             </h3>
             {/* <p>Serching for new job right now</p> */}
           </div>
-          <div className="col-md-5 mt-2 py-3">
-            <img
-              src="http://purepng.com/public/uploads/large/purepng.com-men-pointing-thumbs-uppeoplepersonsgesturesmanmalepointing-thumbs-up-1121525088552izp1f.png"
-              id="pro-img"
-            />
+          {/* "http://purepng.com/public/uploads/large/purepng.com-men-pointing-thumbs-uppeoplepersonsgesturesmanmalepointing-thumbs-up-1121525088552izp1f.png" */}
+          <div className="col-md-5  mt-2 d-flex align-items-center justify-content-center c-img">
+            <div id="main-img" className="shadow-lg">
+              <img src={my} id="pro-img" />
+            </div>
           </div>
         </div>
         {/* </div> */}
@@ -166,12 +167,14 @@ export default function AboutScreen() {
         <div className="row ab-r">
           <div className="col-md-5">
             <span className="text-dark fw-bold fs-2">Name :</span>&nbsp;
-            <span className="text-dark fs-3 fw-bold ">venkatesh</span>
+            <span className="text-dark fs-3 fw-bold ">Venkatesh</span>
           </div>
 
           <div className="col-md-5">
             <span className="text-dark fw-bold fs-2">Github :</span>&nbsp;
-            <span className="text-dark fs-3 fw-bold ">https://github.com/venky436</span>
+            <span className="text-dark fs-3 fw-bold ">
+              https://github.com/venky436
+            </span>
           </div>
           {/* <div className="col-md-12 mx-1 my-4 bg-white p-3 detail-c shadow-lg  h-100 text-white"> */}
           <div className=" col-md-5">
@@ -181,13 +184,13 @@ export default function AboutScreen() {
 
           <div className="col-md-5 ">
             <span className="text-dark fw-bold fs-2">City :</span>&nbsp;
-            <span className="text-dark fs-3 fw-bold ">Sattenpalle</span>
+            <span className="text-dark fs-3 fw-bold ">Sattenpalli</span>
           </div>
 
-          <div className="col-md-5 ">
+          {/* <div className="col-md-5 ">
             <span className="text-dark fw-bold fs-2">Website :</span>&nbsp;
             <span className="text-dark fs-3 fw-bold ">http//:venky.com</span>
-          </div>
+          </div> */}
 
           <div className="col-md-5">
             <span className="text-dark fw-bold fs-2">Age :</span>&nbsp;
@@ -218,11 +221,11 @@ export default function AboutScreen() {
         </div>
 
         <div className="row d-flex align-items-center justify-content-center my-4">
-          <div className="col-md-3 col-sm-3 shadow-lg bg-dark text-white q-c">
+          <div className="col-md-4 col-sm-4 shadow-lg bg-dark text-white q-c ">
             <h3 id="course">B tech</h3>
             <div id="coll">
-              <span id="c-head">Collage : </span>
-              <span>V R Siddhartha Engineering collage</span>
+              <span id="c-head">College : </span>
+              <span>V R Siddhartha Engineering college</span>
             </div>
             <div id="coll">
               <span id="c-head">Branch : </span>
@@ -244,11 +247,11 @@ export default function AboutScreen() {
             </div>
           </div>
 
-          <div className="col-md-3 col-sm-3 shadow-lg bg-dark text-white q-c">
+          <div className="col-md-4 col-sm-4 shadow-lg bg-dark text-white q-c">
             <h3 id="course">Intermediate</h3>
             <div id="coll">
-              <span id="c-head">Collage : </span>
-              <span>Vasavi junior collage</span>
+              <span id="c-head">College : </span>
+              <span>Vasavi junior college</span>
             </div>
             <div id="coll">
               <span id="c-head">Group : </span>
@@ -270,7 +273,7 @@ export default function AboutScreen() {
             </div>
           </div>
 
-          <div className="col-md-3 col-sm-3 shadow-lg bg-dark text-white q-c">
+          <div className="col-md-4 col-sm-4 shadow-lg bg-dark text-white q-c">
             <h3 id="course">School</h3>
             <div id="coll">
               <span id="c-head">School : </span>
@@ -304,11 +307,10 @@ export default function AboutScreen() {
               <span className="text-danger">I</span> am venkatesh
             </h3>
             <p>
-              <i class="fas fa-hand-point-right text-success"></i> I started
-              learning these technologies when i was studying my b tech 4th
-              year.At the starting i spent much time on learning i mean every
-              day 8 to 9 hours.However now i am comfortable to develop the
-              website with front-end and backend i thnk i will get good job soon
+              <i class="fas fa-hand-point-right text-success"></i> I did not
+              work any company but personally i have more than 1 year experience
+              on these technologies.Now i can bulid complete website i think i
+              will get good job soon
               <p>
                 <i class="fas fa-hand-point-right text-danger"></i> If you need
                 any developer to work on your front-end related project please
@@ -331,7 +333,7 @@ export default function AboutScreen() {
           <div className="col-md-6 col-8 col-sm-7 con-c">
             <h3>
               <span id="h">Email :</span>{" "}
-              <span >venkateshpannuri436@gmail.com</span>
+              <span>venkateshpannuri436@gmail.com</span>
             </h3>
             <h3>
               <span id="h">Mobile :</span> <span>7997290161</span>
@@ -349,7 +351,8 @@ export default function AboutScreen() {
                 <i className="fas fa-hand-point-right"></i> Front-End Work
               </li>
               <li>
-                <i className="fas fa-hand-point-right"></i> Back-End Work (python,Django)
+                <i className="fas fa-hand-point-right"></i> Back-End Work
+                (Python,Django)
               </li>
             </ul>
           </div>

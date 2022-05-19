@@ -22,12 +22,12 @@ export default function Nav() {
               {/* <LinkContainer to="/">
                 <li>Home</li>
               </LinkContainer> */}
-              <LinkContainer to="/">
+              {/* <LinkContainer to="/">
                 <li>About</li>
-              </LinkContainer>
+              </LinkContainer> */}
 
               <LinkContainer to="/projects">
-                <li>Projects</li>
+                <li className='fs-3 text-dark li'>Projects</li>
               </LinkContainer>
               {/* <LinkContainer to="/contact">
                 <li>Contact</li>

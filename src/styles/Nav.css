@@ -30,7 +30,19 @@
     cursor: pointer;
     transition: all 1s;
     text-align: center;
+    animation: li 1s 1;
+    transition: all 800ms;
 }
+@keyframes li {
+    0%{
+        opacity: 0;
+        margin-right: 80px;
+    }100%{
+        opacity: 1;
+        margin-right: 0;
+    }
+}
+
 .nav-c .nav li:hover::after{
  content: '';
  display: block;
@@ -46,6 +58,18 @@
     /* background-color:red ; */
     position: relative;
     margin:0 0 0 2rem;
+    animation : head 2s 1;
+    transition: all 1s;
+}
+@keyframes head {
+    0%{
+        width: 0;
+        opacity: 0;
+    }100%{
+        width: 26%;
+        opacity: 1;
+    }
+    
 }
 .main h4{
   font-size: 2.7rem;
@@ -53,7 +77,21 @@
   cursor: pointer;
   font-weight: bolder;
   /* text-align: center; */
+  color: black !important;
+ 
+  animation: name 5s 1 ;
+  transition: all 2s;
+ 
 }
+@keyframes name {
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+    
+}
+
 .main #t{
     position: absolute;
     top: 0;

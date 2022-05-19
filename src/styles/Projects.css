@@ -21,6 +21,10 @@
 .im{
     height: 20rem;
     object-fit: cover;
+    transition: all 300ms;
+}
+.im:hover{
+    transform: scale(0.9);
 }
 .ccc{
     min-height: 40rem !important;
